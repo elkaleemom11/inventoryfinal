@@ -1,7 +1,84 @@
+## Overview ##
+"Stock and Check" is a full stack, MVC (Model-View-Controller) application that provides users the ability to record, track, and locate inventory at home, work, or in the field.  Users from all professions can access the "Stock and Check" app from their smart phone and begin creating, storing, and managing their inventory at any time, and during any application. 
+
+The app is simple to use and utilizes a familiar technology known as the Quick Response (QR) code.
+
+## How to Use the Stock and Check App ##
+The user begins at the login page, where the user creates a login name (email address) and password. The user is then directed to the main page of the app where a number of options are available to select and defined as following:
+
+Category button is used to name (i.e. Garage) the location of the items being placed in inventory. The user assigns a part number (if applicable), cost (if applicable), minimum quantity, supplier (if applicable), and the description of the item. Items are  scanned via QR scanner by the user and a bar code is generated. The bar code once scanned again, returns the list of all the items placed into this category, such as table saw, shovels, hex nails, and etc.  
+
+**Contributors:**
+Kelsey Grover (Backend/db) https://github.com/kjgrover/stockandtrack
+Al Oshiro (Backend/db/QR scan):
+Garret Wasden (Frontend/routes):
+Connie Elbon (Frontend/trello/presentations): https://github.com/elkaleemom11
+
+### **Technologies/Languages Used:**
+1. Trello
+1. MySQL
+1. Node.js
+1. Express
+1. React
+1. Materialize
+1. Sequelize
+1. Javascript
+1. HTML5/CSS3
+1. API libraries-jQuery
+1. Geolocation API
+1. Heroku
+1. QR Code
+1. Smart phone
+1. Label maker/printer
+
+**MVC Starter Template:**  The structure of the project was provided to us by the use of a boilerplate with the following files:
+Create React App is divided into two packages:
+
+* `create-react-app` is a global command-line utility that you use to create new projects.
+* `react-scripts` is a development dependency in the generated projects (including this one).
+
+You almost never need to update `create-react-app` itself: it delegates all the setup to `react-scripts`.
+
+When you run `create-react-app`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.
+
+In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
+
+After creation, your project should look like this:
+
+```
+my-app/
+  README.md
+  node_modules/
+  package.json
+  public/
+    index.html
+    favicon.ico
+  src/
+    App.css
+    App.js
+    App.test.js
+    index.css
+    index.js
+    logo.svg
+
+
+
+
+
+
+To obtain the user's current location, you can call the getCurrentPosition() method. This initiates an asynchronous request to detect the user's position, and queries the positioning hardware to get up-to-date information. When the position is determined, the defined callback function is executed. You can optionally provide a second callback function to be executed if an error occurs. A third, optional, parameter is an options object where you can set the maximum age of the position returned, the time to wait for a request, and if you want high accuracy for the position.
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
 
 ## Table of Contents
 
@@ -103,47 +180,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 - [Alternatives to Ejecting](#alternatives-to-ejecting)
 - [Something Missing?](#something-missing)
 
-## Updating to New Releases
 
-Create React App is divided into two packages:
-
-* `create-react-app` is a global command-line utility that you use to create new projects.
-* `react-scripts` is a development dependency in the generated projects (including this one).
-
-You almost never need to update `create-react-app` itself: it delegates all the setup to `react-scripts`.
-
-When you run `create-react-app`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.
-
-To update an existing project to a new version of `react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md), find the version you’re currently on (check `package.json` in this folder if you’re not sure), and apply the migration instructions for the newer versions.
-
-In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
-
-We commit to keeping the breaking changes minimal so you can upgrade `react-scripts` painlessly.
-
-## Sending Feedback
-
-We are always open to [your feedback](https://github.com/facebookincubator/create-react-app/issues).
-
-## Folder Structure
-
-After creation, your project should look like this:
-
-```
-my-app/
-  README.md
-  node_modules/
-  package.json
-  public/
-    index.html
-    favicon.ico
-  src/
-    App.css
-    App.js
-    App.test.js
-    index.css
-    index.js
-    logo.svg
-```
 
 For the project to build, **these files must exist with exact filenames**:
 

@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import SignIn from './Components/SignIn';
-import { Admin } from 'react-admin';
-import authProvider from './Components/authProvider';
+// import { Admin } from 'react-admin';
+// import authProvider from './Components/authProvider';
 import './App.css';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       signin: []
+
     }
   }
 
@@ -35,9 +37,9 @@ class App extends Component {
   }
   render() {
     return (
-      <Admin authProvider={authProvider}>
-        <SignIn signin={this.state.signin} />
-      </Admin>
+      // <Admin authProvider={authProvider}>
+      <SignIn signin={this.state.signin} />
+      // </Admin>
     );
   }
 }
@@ -45,3 +47,4 @@ class App extends Component {
 
 
 export default App;
+

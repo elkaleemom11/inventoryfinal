@@ -3,7 +3,7 @@ import { AUTH_LOGIN } from 'react-admin';
 export default (type, params) => {
     if (type === AUTH_LOGIN) {
         const { email, password } = params;
-        // Needs authentication route here from backend
+        // Needs authentication route here from backend (put in relative path here)
         const request = new Request('https://mydomain.com/authenticate', {
             method: 'POST',
             body: JSON.stringify({ email, password }),
@@ -22,4 +22,4 @@ export default (type, params) => {
     }
 }
 
-return Promise.resolve();
+// return Promise.resolve();

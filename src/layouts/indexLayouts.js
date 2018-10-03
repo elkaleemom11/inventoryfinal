@@ -1,3 +1,5 @@
-// import Layouts from './components/Layouts';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Storehouse from './storehouse';
 
-// export default Layouts;
+ReactDOM.render(<Storehouse />, document.querySelector('#root'));
